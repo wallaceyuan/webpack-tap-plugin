@@ -1,6 +1,6 @@
+var webpack = require('webpack/lib/webpack');
+let config = require('./webpack.config')
+let compile = webpack(config)
 
-let {resolve} = require('path')
-var webpackPath = resolve(__dirname, 'node_modules', 'webpack-cli', 'bin', 'cli.js');
-console.log(webpackPath)
 
-require(webpackPath);
+compile.run()
